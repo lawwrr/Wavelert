@@ -1,19 +1,23 @@
 {
-	"name": "wavelert",
-	"index": "index.js",
-	"scripts": {
-		"build": "parcel build --global=wavelert --out-file=wavelert.js index.js",
-		"gh-pages": "parcel build --public-url='/wavelert' --global=wavelert --out-dir=docs --out-file=index.html gh-pages.html",
-		"watch": "parcel --global=wavelert index.html"
-	},
-	"dependencies": {
-		"autoprefixer": "^9.4.9",
-		"parcel": "^1.11.0",
-		"postcss-modules": "^1.4.1"
-	},
-	"devDependencies": {
-		"caniuse-lite": "^1.0.30000939",
-		"postcss-cssnext": "^3.1.0",
-		"postcss-preset-env": "^6.6.0"
-	}
+  "name": "wavelert",
+  "index": "index.js",
+  "scripts": {
+    "build": "parcel build --global=wavelert --out-file=wavelert.js index.js",
+    "gh-pages": "parcel build --public-url='/wavelert' --global=wavelert --out-dir=docs --out-file=index.html gh-pages.html",
+    "watch": "parcel --global=wavelert index.html",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.4.9",
+    "parcel": "^1.11.0",
+    "postcss-modules": "^1.4.1",
+    "snyk": "^1.189.0"
+  },
+  "devDependencies": {
+    "caniuse-lite": "^1.0.30000939",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-preset-env": "^6.6.0"
+  },
+  "snyk": true
 }
