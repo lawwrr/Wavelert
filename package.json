@@ -8,7 +8,7 @@
 	},
 	"dependencies": {
 		"autoprefixer": "^9.4.9",
-		"parcel": "^1.11.0",
+		"parcel": "^1.12.4",
 		"postcss-modules": "^1.4.1"
 	},
 	"devDependencies": {
